@@ -1,7 +1,6 @@
 import java.lang.reflect.Field;
 
 public class text {
-
     public static void main(String[] args) {
 
         Class sample=MoreFields.class;
