@@ -13,32 +13,32 @@ public class control {
     	//init();
 } 
 		
-	// ³õÊ¼»¯
+	// åˆå§‹åŒ–
     public  void init() {
-        // ²»Í¬µÄÊı¾İ¿âÓĞ²»Í¬µÄÇı¶¯
+        // ä¸åŒçš„æ•°æ®åº“æœ‰ä¸åŒçš„é©±åŠ¨
         String driverName = "com.mysql.jdbc.Driver";
         String url = "jdbc:mysql:///test";
         //String url = "jdbc:mysql://localhost:3306/2";127.0.0.1
         	//"jdbc:mysql://127.0.0.1:3306/4";//?useUnicode=true&characterEncoding=UTF-8";
-        String user = "Ê¥¹â";
-        String password = "";
+        String user = "åœ£å…‰";
+        String password = "";//yesï¼Œæˆ‘è¿˜æ²¡è®¾å¯†ç ï¼Œæ¬¢è¿æ¥é»‘
       
 
         try {
-            // ¼ÓÔØÇı¶¯
+            // åŠ è½½é©±åŠ¨
             Class.forName(driverName); 
-            // ÉèÖÃ ÅäÖÃÊı¾İ
-            // 1.url(Êı¾İ¿´·şÎñÆ÷µÄipµØÖ· Êı¾İ¿â·şÎñ¶Ë¿ÚºÅ Êı¾İ¿âÊµÀı)
+            // è®¾ç½® é…ç½®æ•°æ®
+            // 1.url(æ•°æ®çœ‹æœåŠ¡å™¨çš„ipåœ°å€ æ•°æ®åº“æœåŠ¡ç«¯å£å· æ•°æ®åº“å®ä¾‹)
             // 2.user
             // 3.password  
             conn = DriverManager.getConnection(url, user, password);
-            // ¿ªÊ¼Á¬½ÓÊı¾İ¿â
-            System.out.println("Êı¾İ¿âÁ¬½Ó³É¹¦..");
+            // å¼€å§‹è¿æ¥æ•°æ®åº“
+            System.out.println("æ•°æ®åº“è¿æ¥æˆåŠŸ..");
         } catch (ClassNotFoundException e) {
-            // TODO ×Ô¶¯Éú³ÉµÄ catch ¿é
+            // TODO è‡ªåŠ¨ç”Ÿæˆçš„ catch å—
             e.printStackTrace();
         } catch (SQLException e) {
-            // TODO ×Ô¶¯Éú³ÉµÄ catch ¿é
+            // TODO è‡ªåŠ¨ç”Ÿæˆçš„ catch å—
             e.printStackTrace();
         }
 
