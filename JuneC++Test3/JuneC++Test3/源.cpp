@@ -1,27 +1,28 @@
 #include <iostream>
-#include <stdio.h>
 #include <windows.h>
+#include <conio.h>
 
 using namespace std;
 
 int main()
 {
-	const int x = 26;
-	char* p = new char[x];
-	int i, num = 'a';
-
-	//cout.setf(ios_base::fixed, ios_base::floatfield);(防止消除小数后数值)
-	//int k = sizeof x /sizeof(int);(让编译器自己计算元素个数)
-	//cout<<endl<<static_cast<bool>(x);(强制类型转换)
-	for (i = 0; i <= 25; i++)
+	int ch;
+	int count = 0;
+	while ((ch=cin.get())!=EOF)
 	{
-		p[i] = num;
-		num++;
-		cout << p[i];
-		Sleep(45);
+		cout.put(char(ch));
+		++count;
 	}
-	cin.get();
-	delete[]p;
-	//int *p = (int *)malloc(sizeof(int)*x);
+	cout <<endl<<count<<"characters read\n";
+	system("pause");
+
+	int i;
+	for (i = 0; i<10; i++) {
+		printf("\r(.)(.)");
+		Sleep(300);
+		printf("\r(o)(o)");
+		Sleep(300);
+	}
+	printf("\r      ");
 	return 0;
 }
