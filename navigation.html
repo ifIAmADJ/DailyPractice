@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>简易下拉菜单</title>
+    <style>
+        ul{list-style:none;}
+        a,li{
+            text-decoration: none; /*去掉下划线*/
+            color: #ffffff;
+            width: 200px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+        }
+        .head{
+            margin:30px;
+            width: 1400px;
+            height: 50px;
+            background-color:#ff5980;
+        }
+        .head ul{background-color: cornsilk;}
+        .head ul li{float: left;}
+        .head ul li a:hover{
+            background-color: coral;
+        }
+        .head ul li ul {
+            display: none;
+            color: darksalmon;
+        }
+        .head ul li ul li{
+            background-color:#b42946 ;
+        }
+        .head ul li:hover ul{   /*二级子元素*/
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+        <div class="head">
+          <ul>
+              <li><a href="#">首页</a></li>
+              <li><a href="#">家用电器</a>
+              <ul>
+                  <li><a href="#">电视</a></li>
+                  <li><a href="#">空调</a></li>
+              </ul>
+              </li>
+              <li><a href="#">艺术</a>
+              <ul>
+                  <li><a href="#">玄学</a></li>
+                  <li><a href="#">养殖</a></li>
+              </ul>
+              </li>
+              <li><a href="#">医药保健</a>
+              <ul>
+                  <li><a href="#">枸杞</a></li>
+                  <li><a href="#">啤酒</a></li>
+              </ul>
+              </li>
+              <li><a href="#">关于我们</a>
+                <ul>
+                <li><a href="#">这个好像是标配</a></li>
+                </ul>
+              </li>
+          </ul>
+            
+        </div>
+</body>
+</html>
