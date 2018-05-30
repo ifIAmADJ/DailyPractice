@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div1{
+            width: 100px;
+            height: 100px;
+            border: 1px solid;
+            background: #7ae7ff;
+        }
+    </style>
+    <script>
+        function charge() {
+            var oDiv=document.getElementById('div1');
+            oDiv.style.background='khaki';
+            //style 基于行内操作
+            //一定要注意优先级！！！！！！
+        }
+    </script>
+</head>
+<body>
+<input type="button" value="变色" onclick="charge()">
+<div id="div1"></div>
+</body>
+</html>

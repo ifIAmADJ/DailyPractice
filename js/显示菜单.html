@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div1{
+            height: 300px;
+            width: 100px;
+            background-color: cornsilk;
+            display: none;
+        }
+    </style>
+    <script>
+        function shoehide() {
+            var oDiv=document.getElementById('div1');
+            if (oDiv.style.display=='block')
+            {
+                oDiv.style.display='none';
+            }
+            else
+            {
+                oDiv.style.display='block';
+            }
+        }
+    </script>
+</head>
+<body>
+<input type="button" value="显示更多" onclick="shoehide()">
+<div id="div1">
+    <ul>
+        <li>balala</li>
+        <li>balala</li>
+        <li>balala</li>
+    </ul>
+</div>
+</body>
+</html>

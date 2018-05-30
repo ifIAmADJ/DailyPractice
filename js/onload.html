@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload=function () {
+        //代码是顺序执行的，当执行到document.getE....这一句的时候，还没有加载到此div对象，所以设置也就不能够成功。
+            // 所以使用onload来加载文档后，再使用
+            var oBtn=document.getElementById('btn1');
+            oBtn.onclick=function () {
+                alert('a');
+            }
+        }
+    </script>
+</head>
+<body>
+<input type="button" id="btn1" value="xxx">
+</body>
+</html>
