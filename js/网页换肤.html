@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link id="lli" rel="stylesheet" href="./css1.css"/>
+
+    <script>
+        function back1() {
+            var oL=document.getElementById('lli');
+            oL.href='./css1.css';
+        }
+        function next1() {
+            var oL=document.getElementById('lli');
+            oL.href='./css2.css';
+        }
+    </script>
+</head>
+<body>
+<input type="button" value="上一页" onclick="back1()"/>
+<input type="button" value="下一页" onclick="next1()"/>
+</body>
+</html>

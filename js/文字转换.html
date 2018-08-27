@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function settext(name) {
+            var oTxt=document.getElementById('text1');
+            //第一种操作属性的方法
+            //oTxt.value='cscsfs';
+
+            //第二种操作属性的方法
+            oTxt[name]='dfdfgfgr';
+        }
+    </script>
+</head>
+<body>
+<input type="text" id="text1">
+<input type="button" value="改" onclick="settext('value')">
+</body>
+</html>
